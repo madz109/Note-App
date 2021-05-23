@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+  <title>
+  	Notes   	 
+  </title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+	
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, Arial;
+}
+textarea {
+  resize: none;
+  width: 100%;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 5px;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+
+/* Style the content */
+textarea {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  font-size: 14px;
+  font-family: Calibri;
+  padding: 5px;
+}
+section {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  font-size: 14px;
+  font-family: Calibri;
+  padding: 5px;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  
+}
+
+.left {
+  width: 70%;
+}
+
+.right {
+  width: 30%;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+</style>
+
+
+    
+</head>
+<body>
+
+
+<header>
+  <h2>Notes
+  	<body onload="myFunction()">
+		<script> 
+        	document.write(new Date().toLocaleDateString()); 
+        </script>
+  </h2>
+</header>
+
+
+<div class="row">
+  <div class="column left" style="background-color:#aaa;">
+      <h4>Paragraphs</h4>  
+		<textarea 
+			id="w3review" name="paragraphs" rows="25" cols="30"> </textarea>
+  </div>
+  <div class="column right" style="background-color:#aaa;">
+    
+    <h4>Bullets</h4>
+    	<section id="textarea" rows="25" cols="30"contenteditable="true">
+        		<ul>
+   			 		<li>FirstBulletHere</li>
+				</ul>
+        </section>
+        
+        
+        
+        
+  </div>
+</div>
+
+
+
+</body>
+</html>
